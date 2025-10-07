@@ -1,5 +1,5 @@
 # Ex.08 Design of Interactive Image Gallery
-# Date:
+# Date:07/10/2025
 # AIM:
 To design a web application for an inteactive image gallery with minimum five images.
 
@@ -23,6 +23,118 @@ Validate the HTML and CSS code.
 Publish the website in the given URL.
 
 # PROGRAM :
+```
+GALLERY.HTML
+
+
+<html>
+    <head>
+        <title>Gallery</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="image">
+            <img src="mahaan.jpeg" id="image1">
+            <img src="maari.jpeg" id="image2"> 
+            <img src="marco.jpeg" id="image3">
+            <img src="vijay.jpeg" id="image4">
+            <img src="vikram.jpeg" id="image5">
+        </div>
+        
+        <h1>&copy;Image Gallery|Designed by:</h1>
+        <h2>KAVIRAJ.P(25017431)</h2>
+        <script src="scripts.js"></script>
+    </body>
+</html>
+
+STYLE.CSS
+
+*{
+    margin: 0;
+    border:0;
+}
+body{
+    background: linear-gradient(135deg, #00c6ff, #0ee756, #00c6ff);
+}
+.image{
+    
+    display: grid;
+    grid-template-columns: repeat(5,2fr);
+}
+img{
+    position: relative;
+    top: 300px;
+    width: 200px;
+    left:30px;
+    height: 400px;
+    border:solid 10px rgba(58, 135, 171, 0.83);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+h1,h2{
+    position: relative; 
+    top: 400px;
+    left: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    color: azure;
+    
+}
+
+SCRIPT.JS
+
+const img1=document.getElementById("image1");
+img1.addEventListener("mouseover",()=>
+{
+    img1.style.transform="scale(2)"
+});
+img1.addEventListener("mouseout",()=>
+{
+    img1.style.transform="scale(1)"
+});
+const img3=document.getElementById("image3");
+img3.addEventListener("mouseover",()=>
+{
+    img3.style.transform="scale(2.5)"
+});
+img3.addEventListener("mouseout",()=>
+{
+    img3.style.transform="scale(1)"
+});
+const img4=document.getElementById("image4");
+img4.addEventListener("mouseover",()=>
+{
+    img4.style.transform="scale(2)"
+});
+img4.addEventListener("mouseout",()=>
+{
+   img4.style.transform="scale(1)"
+});
+const img5=document.getElementById("image5");
+img5.addEventListener("mouseover",()=>
+{
+    img5.style.transform="scale(2)"
+});
+img5.addEventListener("mouseout",()=>
+{
+    img5.style.transform="scale(1)"
+});
+const img2=document.getElementById("image2");
+img2.addEventListener("mouseover",()=>
+{
+    img2.style.transform="scale(2)"
+
+});
+img2.addEventListener("mouseout",()=>
+{
+    img2.style.transform="scale(1)"
+});
+
+```
 # OUTPUT:
+![alt text](out1.png)
+![alt text](out2.png)
+![alt text](out3.png)
 # RESULT:
 The program for designing an interactive image gallery using HTML, CSS and JavaScript is executed successfully.
